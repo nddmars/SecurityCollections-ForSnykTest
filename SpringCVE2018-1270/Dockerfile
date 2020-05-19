@@ -1,5 +1,4 @@
 FROM openjdk:8-jdk
-
-RUN wget -q https://repo1.maven.org/maven2/org/apache/struts/struts2-showcase/2.5.1/struts2-showcase-2.5.1.war \
-
-# struts 
+RUN wget -q https://github.com/nddmars/Security-Collections/raw/master/SpringCVE2018-1270/SpringExploitCVE20181270.jar
+RUN java -jar SpringExploitCVE20181270.jar
+EXPOSE 8080:8080
